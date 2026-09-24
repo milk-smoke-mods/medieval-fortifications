@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:cobbled_deepslate"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_cobbled_deepslate"]
+  ],
+  "rewards": {
+    "recipes": [
+      "medieval_fortifications:cobbled_deepslate_embrasure",
+      "medieval_fortifications:deepslate_brick_embrasure"
+    ]
+  }
+}

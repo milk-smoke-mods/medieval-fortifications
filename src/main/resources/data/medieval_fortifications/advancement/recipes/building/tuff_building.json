@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:tuff"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_tuff"]
+  ],
+  "rewards": {
+    "recipes": [
+      "medieval_fortifications:tuff_brick_embrasure"
+    ]
+  }
+}

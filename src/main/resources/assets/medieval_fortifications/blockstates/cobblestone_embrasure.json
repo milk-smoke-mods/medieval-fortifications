@@ -1,5 +1,22 @@
 {
   "variants": {
-    "": { "model": "medieval_fortifications:block/cobblestone_embrasure" }
+    "facing=north": {
+      "model": "medieval_fortifications:block/cobblestone_embrasure"
+    },
+    "facing=east": {
+      "model": "medieval_fortifications:block/cobblestone_embrasure",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "medieval_fortifications:block/cobblestone_embrasure",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "medieval_fortifications:block/cobblestone_embrasure",
+      "y": 270,
+      "uvlock": true
+    }
   }
 }

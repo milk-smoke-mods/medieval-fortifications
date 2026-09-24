@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BSB",
+    "W W",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:deepslate_bricks"
+    },
+    "S": {
+      "item": "minecraft:deepslate_brick_slab"
+    },
+    "W": {
+      "item": "minecraft:deepslate_brick_wall"
+    }
+  },
+  "result": {
+    "id": "medieval_fortifications:deepslate_brick_embrasure",
+    "count": 4
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:mossy_cobblestone"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_mossy_cobblestone"]
+  ],
+  "rewards": {
+    "recipes": [
+      "medieval_fortifications:mossy_cobblestone_embrasure"
+    ]
+  }
+}

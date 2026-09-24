@@ -1,0 +1,8 @@
+{
+	"parent": "medieval_fortifications:block/cobblestone_embrasure",
+	"textures": {
+		"0": "minecraft:block/stone_bricks",
+		"1": "minecraft:block/smooth_stone",
+		"particle": "minecraft:block/stone_bricks"
+	}
+}

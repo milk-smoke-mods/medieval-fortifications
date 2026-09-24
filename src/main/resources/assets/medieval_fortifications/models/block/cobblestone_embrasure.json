@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/block",
 	"textures": {
-		"0": "cobblestone",
-		"1": "smooth_stone",
-		"particle": "cobblestone"
+		"0": "minecraft:block/cobblestone",
+		"1": "minecraft:block/smooth_stone",
+		"particle": "minecraft:block/cobblestone"
 	},
 	"elements": [
 		{

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BSB",
+    "W W",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:tuff_bricks"
+    },
+    "S": {
+      "item": "minecraft:tuff_brick_slab"
+    },
+    "W": {
+      "item": "minecraft:tuff_brick_wall"
+    }
+  },
+  "result": {
+    "id": "medieval_fortifications:tuff_brick_embrasure",
+    "count": 4
+  }
+}

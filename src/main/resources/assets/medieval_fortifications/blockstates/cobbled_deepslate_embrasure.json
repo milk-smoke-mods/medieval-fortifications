@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "medieval_fortifications:block/cobbled_deepslate_embrasure"
+    },
+    "facing=east": {
+      "model": "medieval_fortifications:block/cobbled_deepslate_embrasure",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "medieval_fortifications:block/cobbled_deepslate_embrasure",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "medieval_fortifications:block/cobbled_deepslate_embrasure",
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}

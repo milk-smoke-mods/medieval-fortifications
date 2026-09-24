@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "medieval_fortifications:block/tuff_brick_embrasure"
+    },
+    "facing=east": {
+      "model": "medieval_fortifications:block/tuff_brick_embrasure",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "medieval_fortifications:block/tuff_brick_embrasure",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "medieval_fortifications:block/tuff_brick_embrasure",
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}
