@@ -8,8 +8,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Set;
 
 public final class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -88,21 +87,16 @@ public final class ModBlocks {
             );
 
     /**
-     * Only ran once. Acts as a constructor for EMBRASURE_BLOCKS.
-     * @return A HashMap of every embrasure block to be stored in the constant EMBRASURE_BLOCKS
+     * An immutable set of all embrasure blocks
      */
-    private static HashMap<String, DeferredBlock<EmbrasureBlock>> embrasureBlocks(){
-        HashMap<String, DeferredBlock<EmbrasureBlock>> embrasureBlocks = new HashMap<>();
-        embrasureBlocks.put("cobblestone_embrasure", COBBLESTONE_EMBRASURE);
-        embrasureBlocks.put("mossy_cobblestone_embrasure", MOSSY_COBBLESTONE_EMBRASURE);
-        embrasureBlocks.put("stone_brick_embrasure", STONE_BRICK_EMBRASURE);
-        embrasureBlocks.put("cobbled_deepslate_embrasure", COBBLED_DEEPSLATE_EMBRASURE);
-        embrasureBlocks.put("deepslate_brick_embrasure", DEEPSLATE_BRICK_EMBRASURE);
-        embrasureBlocks.put("tuff_brick_embrasure", TUFF_BRICK_EMBRASURE);
-        return embrasureBlocks;
-    }
-
-    public static final Map<String, DeferredBlock<EmbrasureBlock>> EMBRASURE_BLOCKS = Map.copyOf(embrasureBlocks());
+    public static final Set<DeferredBlock<EmbrasureBlock>> EMBRASURE_BLOCKS = Set.of(
+            COBBLESTONE_EMBRASURE,
+            MOSSY_COBBLESTONE_EMBRASURE,
+            STONE_BRICK_EMBRASURE,
+            COBBLED_DEEPSLATE_EMBRASURE,
+            DEEPSLATE_BRICK_EMBRASURE,
+            TUFF_BRICK_EMBRASURE
+    );
 
     private ModBlocks() {
     }

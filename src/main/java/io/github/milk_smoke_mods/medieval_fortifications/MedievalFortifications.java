@@ -8,6 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 @Mod(MedievalFortifications.MODID)
 public class MedievalFortifications {
@@ -21,9 +22,9 @@ public class MedievalFortifications {
 
     private void addCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey().equals(CreativeModeTabs.BUILDING_BLOCKS)) {
-            event.accept(ModItems.COBBLESTONE_EMBRASURE.get());
-            event.accept(ModItems.MOSSY_COBBLESTONE_EMBRASURE.get());
-
+            for(DeferredBlock<EmbrasureBlock> embrasureBlock : ModBlocks.EMBRASURE_BLOCKS){
+                event.accept(embrasureBlock.get());
+            }
         }
     }
 }
