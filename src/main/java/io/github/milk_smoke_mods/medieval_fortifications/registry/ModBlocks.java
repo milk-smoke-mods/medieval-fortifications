@@ -2,12 +2,15 @@ package io.github.milk_smoke_mods.medieval_fortifications.registry;
 
 import io.github.milk_smoke_mods.medieval_fortifications.MedievalFortifications;
 import io.github.milk_smoke_mods.medieval_fortifications.block.EmbrasureBlock;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.EnumMap;
 import java.util.Set;
 
 public final class ModBlocks {
