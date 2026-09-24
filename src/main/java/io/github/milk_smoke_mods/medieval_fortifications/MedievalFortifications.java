@@ -1,6 +1,7 @@
 package io.github.milk_smoke_mods.medieval_fortifications;
 
 import io.github.milk_smoke_mods.medieval_fortifications.block.EmbrasureBlock;
+import io.github.milk_smoke_mods.medieval_fortifications.collections.BlockLists;
 import io.github.milk_smoke_mods.medieval_fortifications.registry.ModBlocks;
 import io.github.milk_smoke_mods.medieval_fortifications.registry.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -22,7 +23,7 @@ public class MedievalFortifications {
 
     private void addCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey().equals(CreativeModeTabs.BUILDING_BLOCKS)) {
-            for(DeferredBlock<EmbrasureBlock> embrasureBlock : ModBlocks.EMBRASURE_BLOCKS){
+            for(DeferredBlock<EmbrasureBlock> embrasureBlock : BlockLists.EMBRASURE_BLOCKS){
                 event.accept(embrasureBlock.get());
             }
         }

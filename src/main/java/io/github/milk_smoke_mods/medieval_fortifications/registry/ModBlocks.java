@@ -89,18 +89,6 @@ public final class ModBlocks {
                             .noOcclusion()
             );
 
-    /**
-     * An immutable set of all embrasure blocks
-     */
-    public static final Set<DeferredBlock<EmbrasureBlock>> EMBRASURE_BLOCKS = Set.of(
-            COBBLESTONE_EMBRASURE,
-            MOSSY_COBBLESTONE_EMBRASURE,
-            STONE_BRICK_EMBRASURE,
-            COBBLED_DEEPSLATE_EMBRASURE,
-            DEEPSLATE_BRICK_EMBRASURE,
-            TUFF_BRICK_EMBRASURE
-    );
-
     private ModBlocks() {
     }
 }
